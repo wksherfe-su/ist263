@@ -1,0 +1,11 @@
+/* the goal is for the photos to do the work */
+body {font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;}
+header {color: #000000;}
+p {color: #000000}
+link {color: #000000}
+nav {background-color: #cccccc;}
+nav a {color: #000000;}
+nav a:hover {color: #575757;}
+nav {padding: 10px;}
+nav {margin-bottom: 30px;}
