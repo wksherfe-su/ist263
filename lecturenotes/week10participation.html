@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @media only screen and (max-width: 800px) {
+        .large {display: none;} /* don't display large image on mobile when viewport is width 800 or less */
+    }
+    @media only screen and (min-width:801px) {
+        .small {display: none;} /* dont display small image on browser */
+    }
+</style>
+</head>
+<body>
+    <p class="large">I'm large.</p>
+    <p class="small">I'm small.</p>
+</body>
+</html>
