@@ -2,6 +2,7 @@ body {font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;}
 
 .header {display: flex;
+    font-size: 1.375em;
     background-color: #000000;
     padding: 10px;
     margin-bottom: 30px;
@@ -14,8 +15,7 @@ body {font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     justify-content: flex-start;}
 
-.nav {justify-content: flex-end;
-    flex-wrap: wrap;}
+.nav {justify-content: flex-end;}
 nav a {color: #ffffff;
     text-decoration: none;}
 nav a:hover {color: #b0b0b0;}
