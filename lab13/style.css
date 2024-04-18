@@ -17,17 +17,3 @@ nav {margin-bottom: 30px;}
     margin-bottom: 3px;}
     .pipe {display: none;}
     }
-
-    .skip {
-        background-color: #333333;
-        color: #ffffff;
-        padding: 8px;
-        text-decoration: none;
-        border: 2px solid black;
-        position: absolute;
-        top: 10px;
-        left: -999px; /* push off left side of browser */
-    }
-    .skip:focus {
-        left:10px;
-    }

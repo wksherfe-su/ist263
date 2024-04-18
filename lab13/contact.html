@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="Stylesheet" href="style.css">
+        <style>
+            .flex1 {display: flex; background-color: #cfcfcf; margin-bottom: 30px; border-radius: 1em;}
+            .col1, .col2 {margin: 30px;}
+            .col1 {flex: 1; order: 1;}
+            .col2 {flex: 8; order: 2;}
+            .flex1 {flex-wrap: wrap;}
+
+            .flex2 {display: flex; background-color: #cfcfcf; border-radius: 1em;}
+            .col11, .col22 {margin: 30px;}
+            .col11 {flex: 1; order: 1;
+                max-width: 100%;}
+            .col22 {flex: 1; order: 2;}
+            .flex2 {flex-wrap: wrap;}
+            .map {max-width: 100%;}
+            .form {max-width: 100%;}
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#skip" class="skip" tabindex="1">Skip to Content</a>
+            <a href="index.html" tabindex="2">Home<span class="pipe">|</span></a>
+            <a href="skills.html" tabindex="3">Skills<span class="pipe">|</span></a>
+            <a href="contact.html" tabindex="4">Contact</a>
+        </nav>
+        <h1 id="skip">Contact</h1>
+    <div class="flex1">
+        <div class="col1"><h2>Address</h2>
+        <p>William Sherfey<br>900 S Crouse Ave<br>Syracuse, NY 13244</p> </div>
+        <div class="col2"><br><a href="mailto:wksherfe@syr.edu">Will Sherfey Email</a>
+        <br><a href="https://www.linkedin.com/in/willsherfey" target="_blank">
+        <img src="../images/LI-logo-sized.png" alt="LinkedIn Logo"><br>My LinkedIn Profile</a>
+        </div>
+    </div>
+        
+    <div class="flex2">
+        
+    <div class="col22">
+        <br><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11662.495522190695!2d-76.1483547374262!3d43.04934453819132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a5e0952113%3A0xa671279445418b15!2s820-900%20S%20Crouse%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1706800190181!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="col11"> 
+    <h2>Inquire</h2>
+    <form class="form" action="https://formspree.io/f/mrgnpdlw" method="post">
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname"><br>
+
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname"><br>
+
+        <label for="inquiries">Direct Message/ Inquiries:</label><br>
+        <textarea id="inquiries" name="inquiries" rows="3" cols="40"></textarea><br>
+
+        <p>Want to recieve emails regarding updates to the portfolio?<br>
+            <input type="radio" id="interested" name="mailinglist" value="viewer is interested">
+            <label for="interested">interested</label>
+            <input type="radio" id="notinterested" name="mailinglist" value="viewer opted out">
+            <label for="notinterested">not interested</label>
+        </p>
+
+        <input type="submit" value="Send Form">
+    </form>
+    </div>
+    </div>
+    </body>
+</html>
