@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sherfey, William: Portfolio - Home</title>
     <link rel="Stylesheet" href="stylef.css">
+    <script src="script.js"></script>
     <style>
         body {background-color: #181818;}
         .intro {display: flex;
@@ -48,12 +49,8 @@
         .formbox {color: #ffffff;
         margin-left: 170px;}
 
-        *, *::before, *::after {
-        box-sizing: borderbox;
-        }
-
         .carousel {
-        width: 100vw;
+        width: 1440px;
         height: 100vh;
         position: relative;
         }
@@ -74,8 +71,7 @@
 
         .slide > img {
             display: block;
-            width: 100%;
-            height: 100%;
+            width: auto;
             object-fit: cover;
             object-position: center;
         }
@@ -114,8 +110,8 @@
         .carousel-button.next {
             right: 1rem;
         }
+        .sub {margin-bottom: 80px;}
     </style>
-    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header" id="myHeader">
@@ -128,6 +124,7 @@
             </nav>
         </div>
     </div>
+
     <div class="intro">
         <div><img src="images/pfp.jpg" alt="IMG"></div>
         <div class="bio">                                                           <!--STACK this flexbox, use alt tags that describe images(no "image of..."), empty alt tags for images you dont want screen reader to acknowledge-->
@@ -144,21 +141,6 @@
                 the mountain, snowboarding.</p>
         </div>
     </div>
-
-    <section aria-label="Newest Photos">
-        <div class="carousel" data-carousel>
-            <buttom class="carousel-button prev" data-carousel-button="prev">&#8656;</buttom>
-            <buttom class="carousel-button next" data-carousel-button="next">&#8658;</buttom>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="images/carousel.jpg" alt="formula car">
-                </li>
-                <li class="slide">
-                    <img src="images/carousel-1.jpg" alt="sema datsun">
-                </li>
-            </ul>
-        </div>
-    </section>
 
     <p class="trans">Let's get down to business...</p>
 
@@ -270,8 +252,24 @@
                 <label for="notinterested">not interested</label>
             </p>
     
-            <input type="submit" value="Send Form">
+            <input class="sub" type="submit" value="Send Form">
         </form>
         </div>
+
+
+        <section aria-label="Newest Photos">
+            <div class="carousel" data-carousel>
+                <buttom class="carousel-button prev" data-carousel-button="prev">&#8656;</buttom>
+                <buttom class="carousel-button next" data-carousel-button="next">&#8658;</buttom>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/carousel-1.jpg" alt="formula car">
+                    </li>
+                    <li class="slide">
+                        <img src="images/carousel.jpg" alt="sema datsun">
+                    </li>
+                </ul>
+            </div>
+        </section>
 </body>
 </html>
