@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sherfey, William: Portfolio - Home</title>
     <link rel="Stylesheet" href="stylef.css">
-    <script src="script.js" defer></script>
+
     <style>
         body {background-color: #181818;}
         .intro {display: flex;
@@ -49,67 +49,6 @@
         .formbox {color: #ffffff;
         margin-left: 170px;}
 
-        .carousel {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-        }
-
-        .carousel > ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .slide {
-            position: absolute;
-            inset: 0;
-            opacity: 0;
-            transition: 200ms opacity ease-in-out;
-            transition-delay: 200ms
-        }
-
-        .slide > img {
-            display: block;
-            width: auto;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .slide[data-active] {
-            opacity: 1;
-            z-index: 1;
-            transition-delay: 0ms;
-        }
-
-        .carousel-button {
-            position: absolute;
-            z-index: 2;
-            background: none;
-            border: none;
-            font-size: 4rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: rgba(255, 255, 255, .5);
-            cursor: pointer;
-            border-radius: .25rem;
-            padding: 0 .5rem;
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-        .carousel-button:hover,
-        .carousel-button:focus {
-            color: #ffffff;
-            background-color: rgba(0, 0, 0, 0.3);
-        }
-        .carousel-button:focus {
-            outline: 1px #000000;
-        }
-        .carousel-button.prev {
-            left: 1rem;
-        }
-        .carousel-button.next {
-            right: 1rem;
-        }
         .sub {margin-bottom: 80px;}
     </style>
 </head>
@@ -256,20 +195,5 @@
         </form>
         </div>
 
-
-        <section aria-label="Newest Photos">
-            <div class="carousel" data-carousel>
-                <buttom class="carousel-button prev" data-carousel-button="prev">&#8656;</buttom>
-                <buttom class="carousel-button next" data-carousel-button="next">&#8658;</buttom>
-                <ul data-slides>
-                    <li class="slide" data-active>
-                        <img src="images/carousel-1.jpg" alt="formula car">
-                    </li>
-                    <li class="slide">
-                        <img src="images/carousel.jpg" alt="sema datsun">
-                    </li>
-                </ul>
-            </div>
-        </section>
 </body>
 </html>
