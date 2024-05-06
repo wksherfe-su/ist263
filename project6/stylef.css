@@ -36,9 +36,3 @@ nav a:hover {color: #b0b0b0;}
     .pipe {display: none;}
     .nav {justify-content:start;}
     }
-
-    .carousel {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-    }
