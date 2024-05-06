@@ -1,5 +1,7 @@
+
 body {font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;}
+    background-color: #ffffff;
+    margin: 0;}
 
 .header {display: flex;
     position: fixed;
@@ -35,4 +37,8 @@ nav a:hover {color: #b0b0b0;}
     .nav {justify-content:start;}
     }
 
-    
+    .carousel {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
